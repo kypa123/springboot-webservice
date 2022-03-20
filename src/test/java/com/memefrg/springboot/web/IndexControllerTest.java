@@ -19,6 +19,6 @@ public class IndexControllerTest {
     @Test
     public void 메인페이지(){
         String body = this.restTemplate.getForObject("/",String.class);
-        assertThat(body).contains("스프링부트 웹 서비스 시작해보자!");
+        assertThat(body).contains("스프링부트 웹 서비스 Version 2!");
     }
 }
